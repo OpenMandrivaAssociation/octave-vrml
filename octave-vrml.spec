@@ -3,7 +3,7 @@
 Summary:	VRML graphics for Octave
 Name:       octave-%{pkgname}
 Version:	1.0.11
-Release:	4
+Release:	5
 Source0:	%{pkgname}-%{version}.tar.gz
 License:	GPLv2+
 Group:		Sciences/Mathematics

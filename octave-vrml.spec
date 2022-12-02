@@ -4,7 +4,7 @@ Summary:	3D graphics using VRML
 Name:		octave-%{octpkg}
 Version:	1.0.13
 Release:	1
-Url:		https://octave.sourceforge.io/%{octpkg}/
+Url:		https://packages.octave.org/%{octpkg}/
 Source0:	https://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
 License:	GPLv3+ and GFDL
 Group:		Sciences/Mathematics
@@ -27,8 +27,6 @@ Requires(postun): octave
 
 %description
 3D graphics using VRML.
-
-This package is part of community Octave-Forge collection.
 
 %files
 %license COPYING

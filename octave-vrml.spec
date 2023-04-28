@@ -1,29 +1,30 @@
 %global octpkg vrml
 
 Summary:	3D graphics using VRML
-Name:		octave-%{octpkg}
+Name:		octave-vrml
 Version:	1.0.13
-Release:	1
-Url:		https://packages.octave.org/%{octpkg}/
-Source0:	https://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
-License:	GPLv3+ and GFDL
+Release:	2
+License:	GPLv3+
 Group:		Sciences/Mathematics
-BuildArch:	noarch
+Url:		https://packages.octave.org/vrml/
+Source0:	https://downloads.sourceforge.net/octave/vrml-%{version}.tar.gz
 
-BuildRequires:	octave-devel >= 2.9.7
-BuildRequires:	octave-linear-algebra
-BuildRequires:	octave-miscellaneous
-BuildRequires:	octave-struct
-BuildRequires:	octave-statistics
+BuildRequires:  octave-devel >= 2.9.7
+BuildRequires:  octave-linear-algebra
+BuildRequires:  octave-miscellaneous
+BuildRequires:  octave-struct
+BuildRequires:  octave-statistics
 
 Requires:	octave(api) = %{octave_api}
-Requires:	octave-linear-algebra
-Requires:	octave-miscellaneous
-Requires:	octave-struct
-Requires:	octave-statistics
+Requires:  	octave-linear-algebra
+Requires:  	octave-miscellaneous
+Requires:  	octave-struct
+Requires:  	octave-statistics
 
 Requires(post): octave
 Requires(postun): octave
+
+BuildArch:	noarch
 
 %description
 3D graphics using VRML.
@@ -38,9 +39,6 @@ Requires(postun): octave
 
 %prep
 %autosetup -p1 -n %{octpkg}
-
-# remove backup files
-#find . -name \*~ -delete
 
 %build
 %octave_pkg_build

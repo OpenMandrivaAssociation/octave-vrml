@@ -3,7 +3,7 @@
 Summary:	3D graphics using VRML
 Name:		octave-vrml
 Version:	1.0.13
-Release:	2
+Release:	3
 License:	GPLv3+
 Group:		Sciences/Mathematics
 Url:		https://packages.octave.org/vrml/
@@ -20,6 +20,7 @@ Requires:  	octave-linear-algebra
 Requires:  	octave-miscellaneous
 Requires:  	octave-struct
 Requires:  	octave-statistics
+Requires:	freewrl
 
 Requires(post): octave
 Requires(postun): octave
